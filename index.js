@@ -4,7 +4,7 @@ const token = '6265423552:AAEHqRLTWZrPjaApcWmofL-WGl8j8kehh6Y';
 
 const m = new TelegramBot(token, { polling: true });
 
-bot.on('message', (msg) => {
+m.on('message', (msg) => {
   const jid = msg.chat.id;
   const message = msg.text;
   
